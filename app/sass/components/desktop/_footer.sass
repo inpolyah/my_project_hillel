@@ -1,0 +1,47 @@
+.footer
+    @include form(20Vh, #493382)
+    color: $color-text 
+    position: relative
+    &__content
+        display: flex
+        flex-direction: row
+        font-size: 12px
+        padding-top: 7Vh
+        margin-left: 10Vh
+        position: relative
+        
+        &__text
+            position: relative
+            padding-right: 20px
+            display: inline 
+            opacity: $opc-text 
+        &__none
+            position: relative
+            display: inline 
+            opacity: $opc-text
+            &__pad
+                padding-left: 20px
+                display: inline
+                opacity: $opc-text
+.a_a
+    border-bottom: 1px dashed 
+    opacity: $opc-text
+    
+.a_a:hover
+    border-bottom: none
+    opacity: 1  
+    cursor: pointer
+
+.footer__content__text:after
+    position: relative
+    right: -10px
+    top: 0px
+    content: ""
+    border-right: 1px solid white
+
+.footer__content__none:after
+    position: relative
+    left: 59px
+    top: 0px
+    content: ""
+    border-right: 1px solid white

@@ -1,0 +1,34 @@
+
+.window1
+    @include form(100Vh, #5e42a6)
+.wind1
+    width: 500px
+    color: $color-text
+    position: absolute
+    top: 26Vh
+    left: 10Vh     
+    &__caption
+        @include caption(35px, 0%, 600)
+    &__iteam 
+        @include iteam (42px, 42px, 15px)
+        &__opacity
+            opacity: $opc-text
+            display: inline
+        &__text
+            padding-top: 15px
+    &__button
+        @include button(62px, 12px 25px, 0.5px solid #8765c4, 20px, 9px, 800,)
+        background-color: #5e42a6     
+    &__button:hover     
+        background-color: #7050c9
+        border: 0.5px solid white
+        cursor: pointer
+
+.a
+    border-bottom: 1px dashed 
+    opacity: $opc-text
+.a:hover
+    border-bottom: none
+    opacity: 1  
+    cursor: pointer
+

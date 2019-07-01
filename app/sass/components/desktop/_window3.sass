@@ -1,0 +1,66 @@
+.window3
+    @include form(150Vh, #b74e91)
+    color: $color-text  
+.wind_that
+    position: absolute
+    margin: 10Vh
+    &__caption
+        @include caption(35px, 0%, 600)
+    &__iteam 
+        @include iteam (40px, 0px, 15px)
+        opacity: $opc-text
+    &__button
+        @include button(62px, 12px 25px, 0.5px solid #ce7bae, 20px, 9px,800)
+        background-color: #b74e91
+    &__button:hover
+        background-color: #c958a0
+        border: 0.5px solid white
+        cursor: pointer
+.table
+    padding-top: 60px
+    padding-bottom: 60px
+    &__row
+        @include row(1px solid #ce7bae, flex, row)
+        background-color: #c45c9e
+        position: relative
+        &_column
+            position: relative
+            border-right: 1px solid #ce7bae
+            margin-left: 10%
+    &__caption
+        @include caption(18px, 25px 0px 0px 0px, 600)
+    &__iteam 
+        @include iteam (25px, 35px, 15px)
+        padding-right: 16px
+        opacity: $opc-text
+
+.fa-code
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%
+.fa-cog
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%
+.fa-desktop
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%
+.fa-lock
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%
+.fa-sketch
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%
+.fa-link
+    @include fa(white, 1px solid white, 50%, 8px, #ce7bae) 
+    position: absolute
+    right: 107%
+    top: 11%

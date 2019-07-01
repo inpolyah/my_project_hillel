@@ -1,0 +1,38 @@
+@import vars
+@import mixins
+// desktop  version
+@import components/desktop/navigation
+@import components/desktop/window1
+@import components/desktop/window2
+@import components/desktop/window3
+@import components/desktop/window4
+@import components/desktop/footer
+// tablet  version
+@import components/tablet/navigation
+@import components/tablet/window2
+// tablet(portreit)  version
+@import components/tablet(portreit)/window2
+@import components/tablet(portreit)/window3
+@import components/tablet(portreit)/window4
+// mobile  version
+@import components/mobile/navigation  
+@import components/mobile/window1 
+@import components/mobile/window2  
+@import components/mobile/window3
+@import components/mobile/window4
+@import components/mobile/footer
+
+.page
+    margin: 0
+    
+.content
+    position: relative
+    margin-left: 20%
+    height: 100Vh
+
+@media screen and (max-width:1000px)
+    .content
+        margin-left: 0%
+        position: relative
+        height: 100Vh
+    

@@ -1,0 +1,47 @@
+@mixin button($wdt, $pd, $brd, $brd-r, $fs, $bt-w,)
+    width: $wdt
+    padding: $pd
+    border: $brd
+    border-radius: $brd-r
+    font-size: $fs
+    font-weight: $bt-w
+
+@mixin iteam($pd-t, $pd-b, $fsz)
+    padding-top: $pd-t
+    padding-bottom: $pd-b
+    font-size: $fsz
+
+@mixin caption($fs-z, $pdg, $cap-w)
+    font-size: $fs-z
+    padding: $pdg
+    font-weight: $cap-w
+
+@mixin wind($bgd-c, $hgt)
+    background-color: $bgd-c
+    height: $hgt
+
+@mixin row($rbd, $rd, $f-d)
+    border: $rbd
+    display: $rd
+    flex-direction: $f-d
+
+@mixin  block-page($pg-be,$pg-h, $pg-w, $pg-br)
+    border: $pg-be
+    height: $pg-h
+    width: $pg-w 
+    border-radius: $pg-br
+
+@mixin form($f-ht, $f-bgc)
+    height: $f-ht
+    background-color: $f-bgc
+    
+@mixin fa($fa-bc, $fa-b, $fa-br, $fa-p, $fa-c)
+    background-color: $fa-bc
+    border: $fa-b
+    border-radius: $fa-br
+    padding: $fa-p
+    color: $fa-c
+
+@mixin icon($ic-o, $ic-pr)
+    opacity: $ic-o
+    padding-right: $ic-pr  

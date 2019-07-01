@@ -1,0 +1,102 @@
+.window4
+    @include form(100Vh, #5e42a6)
+    color: $color-text 
+
+.wind_get
+    position: absolute
+    margin: 10Vh
+    &__caption
+        @include caption(35px, 0%, 600)
+    &__iteam 
+        @include iteam (42px, 42px, 15px)
+        opacity: $opc-text
+.block
+    display: flex
+    flex-direction: row
+    justify-content: space-between  
+    font-size: 15px     
+    &__left
+        width: 59%
+        font-weight: 600
+        display: flex
+        flex-direction: column
+        &__top
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin-bottom: 18px
+            &__name
+            &__word
+                margin-top: 0px
+            &__page
+                background-color: #6a4faf
+                @include block-page(1px solid #8765c4, 30px, 180px, 8px)
+            &__email 
+        &__page
+            background-color: #6a4faf
+            @include block-page(1px solid #8765c4, 100px, 100%, 8px)
+    &__mess
+        height: 150px 
+        width: 100%   
+    &__button
+        @include button(70px, 5px 23px, 0.5px solid #8765c4, 20px, 9px, 800)
+        margin-top: 30px 
+        background-color: #5e42a6     
+    &__button:hover     
+        background-color: #7050c9
+        border: 0.5px solid white
+        cursor: pointer
+
+    &__right
+        width: 25%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__word
+            margin-top: 0px
+            font-weight: 600
+        &__text
+            margin-top: -10px
+            opacity: $opc-text
+        .fa-twitter  
+            @include icon($opc-text, 10px) 
+        .fa-twitter:hover
+            opacity: 1  
+            cursor: pointer
+        .fa-facebook-f
+            @include icon($opc-text, 10px)  
+        .fa-facebook-f:hover
+            opacity: 1  
+            cursor: pointer
+        .fa-github
+            @include icon($opc-text, 10px) 
+        .fa-github:hover
+            opacity: 1  
+            cursor: pointer
+        .fa-instagram
+            @include icon($opc-text, 10px)
+        .fa-instagram:hover
+            opacity: 1  
+            cursor: pointer 
+        .fa-linkedin-in
+            @include icon($opc-text, 10px) 
+        .fa-linkedin-in:hover
+            opacity: 1  
+            cursor: pointer
+
+        &__text_bot  
+            
+.block__left:before
+    content: ""
+    border-top: 1px solid #8765c4
+    position: absolute
+    bottom: 310px
+    height: 1px
+    width: 100%
+
+
+
+.a
+    border-bottom: 1px dashed 
+.a:hover
+    border-bottom: none
